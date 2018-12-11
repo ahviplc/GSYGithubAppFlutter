@@ -7,7 +7,7 @@ import 'package:gsy_github_app_flutter/common/ab/provider/user/UserFollowerDbPro
 import 'package:gsy_github_app_flutter/common/ab/provider/user/UserInfoDbProvider.dart';
 import 'package:gsy_github_app_flutter/common/ab/provider/user/UserOrgsDbProvider.dart';
 import 'package:gsy_github_app_flutter/common/config/Config.dart';
-import 'package:gsy_github_app_flutter/common/config/ignoreConfig.dart';
+import 'package:gsy_github_app_flutter/common/config/ignoreConfigByLC.dart';
 import 'package:gsy_github_app_flutter/common/dao/DaoResult.dart';
 import 'package:gsy_github_app_flutter/common/local/LocalStorage.dart';
 import 'package:gsy_github_app_flutter/common/model/Notification.dart';
@@ -35,6 +35,8 @@ class UserDao {
       "note": "admin_script",
       "client_id": NetConfig.CLIENT_ID,
       "client_secret": NetConfig.CLIENT_SECRET
+//    "client_id":"LC",
+//    "client_secret": "LC_MIMA"
     };
     HttpManager.clearAuthorization();
 
